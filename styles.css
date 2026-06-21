@@ -95,6 +95,12 @@ a { text-decoration: none; color: inherit; }
   color: var(--dark);
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
 .nav-links {
   list-style: none;
   display: flex;
