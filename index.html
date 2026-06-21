@@ -262,10 +262,13 @@
           Serving Redmond · Bellevue · Seattle · Eastside and surrounding areas
         </p>
       </div>
-      <form class="contact-form" action="https://formspree.io/f/mlgyrzwj" method="POST">
+      <div id="form-success" style="display:none; padding: 2rem; background:#fff; border-left: 3px solid var(--green); margin-top: 1rem;">
+        <p style="font-family: var(--serif); font-size: 1.3rem; font-weight:300; margin-bottom:0.5rem;" data-en="Thank you for reaching out!" data-ja="お問い合わせありがとうございます！">Thank you for reaching out!</p>
+        <p style="font-size:0.9rem; color: var(--mid);" data-en="Wakako will be in touch with you soon." data-ja="近日中にご連絡いたします。">Wakako will be in touch with you soon.</p>
+      </div>
+      <form class="contact-form" id="contactForm" action="https://formspree.io/f/mlgyrzwj" method="POST">
         <input type="hidden" name="_subject" value="【Wakako's Kitchen HP】お問い合わせが届きました">
         <input type="hidden" name="source" value="Wakako's Kitchen & Family Support Website">
-        <input type="hidden" name="_next" value="https://misakiniinomi.github.io/Wakako-website/thank-you.html">
         <div class="form-group">
           <label for="name" data-en="Name" data-ja="お名前">Name</label>
           <input type="text" id="name" name="name" required
@@ -347,6 +350,33 @@
     track.addEventListener('touchend', e => {
       const diff = startX - e.changedTouches[0].clientX;
       if (Math.abs(diff) > 50) goTo(current + (diff > 0 ? 1 : -1));
+    });
+
+    // Contact form AJAX submit
+    const contactForm = document.getElementById('contactForm');
+    const formSuccess = document.getElementById('form-success');
+    contactForm.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const btn = contactForm.querySelector('button[type="submit"]');
+      btn.disabled = true;
+      try {
+        const res = await fetch(contactForm.action, {
+          method: 'POST',
+          body: new FormData(contactForm),
+          headers: { 'Accept': 'application/json' }
+        });
+        if (res.ok) {
+          contactForm.style.display = 'none';
+          formSuccess.style.display = 'block';
+          if (currentLang === 'ja') applyLang('ja');
+        } else {
+          btn.disabled = false;
+          alert('送信に失敗しました。もう一度お試しください。');
+        }
+      } catch {
+        btn.disabled = false;
+        alert('送信に失敗しました。もう一度お試しください。');
+      }
     });
 
     // Lang toggle
