@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wakako's Kitchen & Family Support</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400;500&family=Noto+Sans+JP:wght@400;500&family=Shippori+Mincho:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-inner">
+      <a href="#home" class="nav-logo">Wakako's Kitchen & Family Support</a>
+      <ul class="nav-links">
+        <li><a href="#services" data-en="Services" data-ja="サービス">Services</a></li>
+        <li><a href="#about" data-en="About" data-ja="私について">About</a></li>
+        <li><a href="#reviews" data-en="Reviews" data-ja="お客様の声">Reviews</a></li>
+        <li><a href="#contact" class="nav-cta" data-en="Contact" data-ja="お問い合わせ">Contact</a></li>
+        <li>
+          <button class="lang-toggle" id="langToggle">日本語</button>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero">
+    <div class="hero-image-wrap">
+      <img src="images/hero-kitchen.jpg" alt="Wakako decorating cupcakes with a child" class="hero-img">
+      <div class="hero-overlay"></div>
+    </div>
+    <div class="hero-content">
+      <p class="hero-tagline"
+        data-en="Home Chef · Nanny · Family Support"
+        data-ja="ホームシェフ・ナニー・ファミリーサポート">
+        Home Chef · Nanny · Family Support
+      </p>
+      <h1 class="hero-title"
+        data-en="Warmth, Care &<br>Delicious Food,<br>Right at Home"
+        data-ja="美味しい食事と安心のサポートを、<br>あなたのご自宅へ。">
+        Warmth, Care &<br>Delicious Food,<br>Right at Home
+      </h1>
+      <p class="hero-desc"
+        data-en="From weekly meal prep to private dining and childcare — a complete support service for your busy family."
+        data-ja="週1回のミールプレップからホームパーティー、チャイルドケアまで。忙しいご家族のためのトータルサポートサービスです。">
+        From weekly meal prep to private dining and childcare — a complete support service for your busy family.
+      </p>
+      <p class="hero-sub"
+        data-en="Serving Redmond · Bellevue · Seattle · Eastside"
+        data-ja="レドモンド・ベルビュー・シアトル・イーストサイド周辺">
+        Serving Redmond · Bellevue · Seattle · Eastside
+      </p>
+      <a href="#contact" class="btn"
+        data-en="Get in Touch"
+        data-ja="お問い合わせ">
+        Get in Touch
+      </a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section services">
+    <div class="container">
+      <p class="section-label" data-en="What I Offer" data-ja="提供サービス">What I Offer</p>
+      <h2 class="section-title" data-en="Services" data-ja="サービス">Services</h2>
+
+      <div class="services-grid">
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="images/chirashi.jpg" alt="Meal prep">
+          </div>
+          <div class="service-body">
+            <h3 data-en="Meal Prep" data-ja="ミールプレップ（作り置き）">Meal Prep</h3>
+            <p data-en="Weekly meal preparation and make-ahead cooking tailored to your family's tastes. Menu planning and grocery shopping available upon request."
+               data-ja="ご家族の好みに合わせた週ごとの作り置き料理。献立相談・買い物代行も対応いたします。">
+              Weekly meal preparation and make-ahead cooking tailored to your family's tastes. Menu planning and grocery shopping available upon request.
+            </p>
+            <div class="pricing">
+              <span class="price">$50<small>/hr</small></span>
+              <span class="pricing-note"
+                data-en="+ ingredients · 2 hr minimum"
+                data-ja="食材費別 · 最低2時間〜">
+                + ingredients · 2 hr minimum
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="images/nanny-baby.jpg" alt="Family support and childcare">
+          </div>
+          <div class="service-body">
+            <h3 data-en="Family Support & Childcare" data-ja="ファミリーサポート・ベビーシッター">Family Support & Childcare</h3>
+            <p data-en="Warm, attentive care for your little ones. Group childcare and mama groups also welcome."
+               data-ja="お子様への温かく丁寧なケア。グループチャイルドケアやママ会にも対応しています。">
+              Warm, attentive care for your little ones. Group childcare and mama groups also welcome.
+            </p>
+            <div class="pricing-list"
+              data-en="<div class='pricing-row'><span>1 family (up to 2 children)</span><span class='price-val'>$35/hr</span></div><div class='pricing-row'><span>2+ families (per child)</span><span class='price-val'>$22/hr</span></div><div class='pricing-row'><span>Group childcare (3+ children)</span><span class='price-val'>Contact us</span></div>"
+              data-ja="<div class='pricing-row'><span>1家族（お子様1〜2人まで）</span><span class='price-val'>$35/時間</span></div><div class='pricing-row'><span>2家族以上（お子様1人あたり）</span><span class='price-val'>$22/時間</span></div><div class='pricing-row'><span>グループチャイルドケア（3人以上）</span><span class='price-val'>応相談</span></div>">
+              <div class="pricing-row"><span>1 family (up to 2 children)</span><span class="price-val">$35/hr</span></div>
+              <div class="pricing-row"><span>2+ families (per child)</span><span class="price-val">$22/hr</span></div>
+              <div class="pricing-row"><span>Group childcare (3+ children)</span><span class="price-val">Contact us</span></div>
+            </div>
+          </div>
+        </div>
+
+        <div class="service-card">
+          <div class="service-img-wrap">
+            <img src="images/roast-beef.jpg" alt="Home party catering">
+          </div>
+          <div class="service-body">
+            <h3 data-en="Home Party & Event Support" data-ja="ホームパーティー・イベントサポート">Home Party & Event Support</h3>
+            <p data-en="Birthday parties, home dinners, girls' nights — restaurant-quality food without leaving home. Menu customized to your event."
+               data-ja="バースデーパーティー、ホームディナー、女子会など。レストランクオリティのお料理をご自宅で。メニューはご要望に合わせてカスタマイズします。">
+              Birthday parties, home dinners, girls' nights — restaurant-quality food without leaving home. Menu customized to your event.
+            </p>
+            <div class="pricing">
+              <span class="price"
+                data-en="from $300"
+                data-ja="$300〜">
+                from $300
+              </span>
+              <span class="pricing-note"
+                data-en="Quote based on guests & menu"
+                data-ja="人数・メニューによりお見積り">
+                Quote based on guests & menu
+              </span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Food Gallery -->
+  <section class="gallery">
+    <div class="gallery-grid">
+      <div class="gallery-item tall"><img src="images/roast-beef.jpg" alt="Roast beef"></div>
+      <div class="gallery-item"><img src="images/cupcakes.jpg" alt="Cupcakes"></div>
+      <div class="gallery-item"><img src="images/spring-rolls.jpg" alt="Spring rolls"></div>
+      <div class="gallery-item tall"><img src="images/chirashi.jpg" alt="Chirashi sushi"></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section about">
+    <div class="container about-inner">
+      <div class="about-img-wrap">
+        <img src="images/portrait.jpg" alt="Wakako">
+      </div>
+      <div class="about-text">
+        <p class="section-label" data-en="About" data-ja="私について">About</p>
+        <h2 class="section-title" data-en="Hi, I'm Wakako" data-ja="はじめまして。Wakakoです。">Hi, I'm Wakako</h2>
+        <p data-en="I work in catering while also serving families as a Home Meal Personal Chef — providing meal prep and home party cooking to support busy families at the dinner table."
+           data-ja="現在、ケータリング会社で調理の仕事に携わりながら、Home Meal Personal Chef（ご家庭向けパーソナルシェフ）として活動しています。ご家庭向けのミールプレップやホームパーティーのお料理をご提供し、忙しいご家族の食卓づくりをサポートしています。">
+          I work in catering while also serving families as a Home Meal Personal Chef — providing meal prep and home party cooking to support busy families at the dinner table.
+        </p>
+        <p data-en="Drawing on my experience as a nanny and family support provider, I strive to offer services that families with young children can trust and rely on. I'm also continuing my studies toward a Postpartum Doula certification, so that new families and busy households can find a little more breathing room."
+           data-ja="また、ナニーやファミリーサポートの経験を活かし、小さなお子さまがいるご家庭にも安心してご利用いただけるサービスを心がけています。現在はPostpartum Doula資格取得に向けて学びを続けながら、忙しいご家庭や産後のご家族が少しでもゆとりある時間を過ごせるようお手伝いしています。">
+          Drawing on my experience as a nanny and family support provider, I strive to offer services that families with young children can trust and rely on. I'm also continuing my studies toward a Postpartum Doula certification, so that new families and busy households can find a little more breathing room.
+        </p>
+        <p data-en="As a mother raising my son, I know firsthand how much daily meals and family support matter. I want to bring every household a table where you can relax — and a little more ease in your day. &ldquo;Richer family time, through delicious food.&rdquo; That's the heart behind every dish I make."
+           data-ja="息子を育てる母親として、毎日の食事や家族を支えることの大切さを実感してきました。だからこそ、お客様のご家庭にも「ほっとできる食卓」と「少しのゆとり」をお届けしたいと思っています。「おいしい食事で、家族の時間をもっと豊かに。」そんな想いを大切に、一つひとつ心を込めてお料理をお作りしています。">
+          As a mother raising my son, I know firsthand how much daily meals and family support matter. I want to bring every household a table where you can relax — and a little more ease in your day. "Richer family time, through delicious food." That's the heart behind every dish I make.
+        </p>
+        <div class="about-tags">
+          <span data-en="Home Cooking" data-ja="家庭料理">Home Cooking</span>
+          <span data-en="Japanese Cuisine" data-ja="日本食">Japanese Cuisine</span>
+          <span data-en="Meal Prep" data-ja="作り置き">Meal Prep</span>
+          <span data-en="Party Catering" data-ja="パーティー料理">Party Catering</span>
+          <span data-en="Childcare" data-ja="チャイルドケア">Childcare</span>
+          <span data-en="Postpartum Support" data-ja="産後サポート">Postpartum Support</span>
+        </div>
+        <p class="about-lang" data-en="Available in <strong>Japanese</strong> and <strong>English</strong>" data-ja="<strong>日本語</strong>・<strong>英語</strong>対応可能">
+          Available in <strong>Japanese</strong> and <strong>English</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reviews -->
+  <section id="reviews" class="section reviews">
+    <div class="container">
+      <p class="section-label" data-en="Reviews" data-ja="お客様の声">Reviews</p>
+      <h2 class="section-title" data-en="What Families Say" data-ja="ご利用いただいたご家族より">What Families Say</h2>
+
+      <div class="carousel">
+        <div class="carousel-track" id="carouselTrack">
+
+          <!-- Review 1: Hannah -->
+          <div class="review-card">
+            <p class="review-text"
+              data-en='"We hired Wakako\'s catering service for my husband\'s and our friend\'s joint birthday party at our home, and it exceeded all of our expectations. She came to our house and prepared an incredible meal for 10 adults and 3 kids, making the entire experience feel effortless and special. Every single dish, from the appetizers to the main courses, was absolutely delicious. The flavors were outstanding, and our guests couldn\'t stop talking about how amazing the food was. Several people even commented that it was better than what they\'ve had at many restaurants. Being able to enjoy restaurant-quality food in the comfort of our own home, without any of the stress of cooking or hosting, made the evening so much more enjoyable. I highly recommend Wakako\'s catering service for anyone looking to host a memorable event at home. We would definitely book her service again!"'
+              data-ja="「夫と友人の合同誕生日パーティーのためにWakakoさんのケータリングをお願いしました。大人10名・子ども3名分のお料理を自宅で作っていただき、期待をはるかに超える素晴らしい体験でした。前菜からメインまで、すべてのお料理が本当に美味しく、多くのゲストが『レストランより美味しい』と話していました。自宅でレストランクオリティの食事が楽しめて、しかも料理や接待のストレスが一切なかったのが最高でした。記念になるホームパーティーを考えている方にぜひおすすめします。また絶対にお願いしたいです！」">
+              "We hired Wakako's catering service for my husband's and our friend's joint birthday party at our home, and it exceeded all of our expectations. She came to our house and prepared an incredible meal for 10 adults and 3 kids, making the entire experience feel effortless and special. Every single dish, from the appetizers to the main courses, was absolutely delicious. The flavors were outstanding, and our guests couldn't stop talking about how amazing the food was. Several people even commented that it was better than what they've had at many restaurants. Being able to enjoy restaurant-quality food in the comfort of our own home, without any of the stress of cooking or hosting, made the evening so much more enjoyable. I highly recommend Wakako's catering service for anyone looking to host a memorable event at home. We would definitely book her service again!"
+            </p>
+            <p class="review-author">— Hannah Choi, Bellevue WA</p>
+          </div>
+
+          <!-- Review 2: Yuki -->
+          <div class="review-card">
+            <p class="review-text"
+              data-en='"I\'ve had Wakako cook for several small parties. Whenever I was unsure what to serve, she offered suggestions across a wide range of cuisines and guided me to the best choice while incorporating my wishes. Every dish she makes would take too much time and effort for me to prepare myself, yet she creates them quickly — and the result is restaurant-quality in both presentation and taste. I\'m always impressed. Going forward, I\'d love to have her prepare not just party food, but everyday meal-prep too. Balancing work and childcare is tough, but I truly believe Wakako\'s support will help me get through it."'
+              data-ja="「何度か少人数のパーティーでお料理を作って頂きました。何が食べたいか迷っていたら幅広いジャンルから提案して下さいますし、希望も取り入れて一番良い選択肢に導いてくれます。作って頂く料理はどれも自分では手間や時間が掛かりすぎるものでも、Wakakoさんは短時間で作れますし、出来上がりはレストラン並の見た目と味で、毎度毎度感激させられます。これからはパーティー料理だけではなく、普段食べる作り置き料理もたくさん作って頂きたいです。仕事と子育ての両立は難しいですが、Wakakoさんのサポートのおかげでなんとかやっていけると信じています。」">
+              "I've had Wakako cook for several small parties. Whenever I was unsure what to serve, she offered suggestions across a wide range of cuisines and guided me to the best choice while incorporating my wishes. Every dish she makes would take too much time and effort for me to prepare myself, yet she creates them quickly — and the result is restaurant-quality in both presentation and taste. I'm always impressed. Going forward, I'd love to have her prepare not just party food, but everyday meal-prep too. Balancing work and childcare is tough, but I truly believe Wakako's support will help me get through it."
+            </p>
+            <p class="review-author">— Yuki, Bellevue WA</p>
+          </div>
+
+          <!-- Review 3: Mika -->
+          <div class="review-card">
+            <p class="review-text"
+              data-en='"I started asking Wakako for help as a sitter when my second child was born. She always put me and my baby first, and I could leave everything in her hands with complete peace of mind. As my children grew, I began asking her for housekeeping help too — mainly cooking — and she still comes about twice a month to prepare dinner. My two kids have completely warmed up to Wakako, and our whole family trusts her deeply. She is truly someone you can rely on."'
+              data-ja="「第二子の出産をきっかけに、シッターとしてWakakoさんにお願いするようになりました。常に母親である私や赤ちゃんのことを第一に考えてくださり、安心してお任せすることができました。子どもが成長してからは、家事代行（主にお料理）もお願いするようになり、現在も月に2回ほど夕食作りに来ていただいています。今では2人の子どもたちもすっかりWakakoさんに懐いており、家族みんなが信頼を寄せている、とても信頼のおける方です。」">
+              "I started asking Wakako for help as a sitter when my second child was born. She always put me and my baby first, and I could leave everything in her hands with complete peace of mind. As my children grew, I began asking her for housekeeping help too — mainly cooking — and she still comes about twice a month to prepare dinner. My two kids have completely warmed up to Wakako, and our whole family trusts her deeply. She is truly someone you can rely on."
+            </p>
+            <p class="review-author">— Mika, Redmond WA</p>
+          </div>
+
+          <!-- Review 4: RJ placeholder (hidden until review received) -->
+          <!-- <div class="review-card">
+            <p class="review-text"
+              data-en='"[RJ\'s review coming soon]"'
+              data-ja="「（RJさんのレビュー、近日掲載予定）」">
+              "[RJ's review coming soon]"
+            </p>
+            <p class="review-author">— RJ, Eastside WA</p>
+          </div> -->
+
+        </div>
+
+        <div class="carousel-controls">
+          <button class="carousel-btn" id="prevBtn" aria-label="Previous">&#8592;</button>
+          <div class="carousel-dots" id="carouselDots"></div>
+          <button class="carousel-btn" id="nextBtn" aria-label="Next">&#8594;</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact">
+    <div class="container contact-inner">
+      <div class="contact-text">
+        <p class="section-label" data-en="Get in Touch" data-ja="お問い合わせ">Get in Touch</p>
+        <h2 class="section-title" data-en="Let's Connect" data-ja="お気軽にご連絡ください">Let's Connect</h2>
+        <p data-en="Whether you need weekly meal prep, childcare, or help planning your next gathering — I'd love to hear from you."
+           data-ja="ミールプレップ、チャイルドケア、パーティーのご相談など、どんなことでもお気軽にどうぞ。">
+          Whether you need weekly meal prep, childcare, or help planning your next gathering — I'd love to hear from you.
+        </p>
+        <p class="contact-area"
+          data-en="Serving Redmond · Bellevue · Seattle · Eastside and surrounding areas"
+          data-ja="レドモンド・ベルビュー・シアトル・イーストサイド周辺（その他エリアはご相談ください）">
+          Serving Redmond · Bellevue · Seattle · Eastside and surrounding areas
+        </p>
+      </div>
+      <form class="contact-form" action="https://formspree.io/wtashiro@gmail.com" method="POST">
+        <input type="hidden" name="_subject" value="【Wakako's Kitchen HP】お問い合わせが届きました">
+        <input type="hidden" name="source" value="Wakako's Kitchen & Family Support Website">
+        <input type="hidden" name="_next" value="https://wtashiro.github.io/thank-you.html">
+        <div class="form-group">
+          <label for="name" data-en="Name" data-ja="お名前">Name</label>
+          <input type="text" id="name" name="name" required
+            data-en-placeholder="Your name"
+            data-ja-placeholder="お名前"
+            placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <label for="email" data-en="Email" data-ja="メールアドレス">Email</label>
+          <input type="email" id="email" name="email" required
+            data-en-placeholder="your@email.com"
+            data-ja-placeholder="メールアドレス"
+            placeholder="your@email.com">
+        </div>
+        <div class="form-group">
+          <label for="service"
+            data-en="Service Interested In"
+            data-ja="ご希望のサービス">
+            Service Interested In
+          </label>
+          <select id="service" name="service">
+            <option value="" data-en="Select a service" data-ja="サービスを選択">Select a service</option>
+            <option value="meal-prep" data-en="Meal Prep" data-ja="ミールプレップ">Meal Prep</option>
+            <option value="childcare" data-en="Family Support & Childcare" data-ja="ファミリーサポート・ベビーシッター">Family Support & Childcare</option>
+            <option value="party" data-en="Home Party & Event" data-ja="ホームパーティー・イベント">Home Party & Event</option>
+            <option value="other" data-en="Other / Not Sure Yet" data-ja="その他・未定">Other / Not Sure Yet</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" data-en="Message" data-ja="メッセージ">Message</label>
+          <textarea id="message" name="message" rows="4"
+            data-en-placeholder="Tell me a little about what you're looking for..."
+            data-ja-placeholder="ご要望・ご相談内容をお気軽にどうぞ"
+            placeholder="Tell me a little about what you're looking for..."></textarea>
+        </div>
+        <button type="submit" class="btn"
+          data-en="Send Message"
+          data-ja="送信する">
+          Send Message
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Wakako's Kitchen & Family Support · Redmond, WA</p>
+    <p data-en="Available in Japanese & English" data-ja="日本語・英語対応可能">Available in Japanese & English</p>
+  </footer>
+
+  <script>
+    // Carousel
+    const track = document.getElementById('carouselTrack');
+    const cards = track.querySelectorAll('.review-card');
+    const dotsContainer = document.getElementById('carouselDots');
+    let current = 0;
+
+    cards.forEach((_, i) => {
+      const dot = document.createElement('button');
+      dot.className = 'carousel-dot' + (i === 0 ? ' active' : '');
+      dot.addEventListener('click', () => goTo(i));
+      dotsContainer.appendChild(dot);
+    });
+
+    function goTo(n) {
+      current = (n + cards.length) % cards.length;
+      track.style.transform = `translateX(-${current * 100}%)`;
+      track.style.transition = 'transform 0.4s ease';
+      dotsContainer.querySelectorAll('.carousel-dot').forEach((d, i) =>
+        d.classList.toggle('active', i === current));
+    }
+
+    document.getElementById('prevBtn').addEventListener('click', () => goTo(current - 1));
+    document.getElementById('nextBtn').addEventListener('click', () => goTo(current + 1));
+
+    // Swipe support
+    let startX = 0;
+    track.addEventListener('touchstart', e => startX = e.touches[0].clientX);
+    track.addEventListener('touchend', e => {
+      const diff = startX - e.changedTouches[0].clientX;
+      if (Math.abs(diff) > 50) goTo(current + (diff > 0 ? 1 : -1));
+    });
+
+    // Lang toggle
+    const toggle = document.getElementById('langToggle');
+    let currentLang = 'en';
+
+    toggle.addEventListener('click', () => {
+      currentLang = currentLang === 'en' ? 'ja' : 'en';
+      toggle.textContent = currentLang === 'en' ? '日本語' : 'English';
+      document.documentElement.lang = currentLang === 'en' ? 'en' : 'ja';
+      applyLang(currentLang);
+    });
+
+    function applyLang(lang) {
+      // Text content elements
+      document.querySelectorAll('[data-en][data-ja]').forEach(el => {
+        if (el.tagName === 'INPUT' || el.tagName === 'TEXTAREA') return;
+        const text = el.getAttribute('data-' + lang);
+        if (text) el.innerHTML = text;
+      });
+
+      // Placeholders
+      document.querySelectorAll('[data-en-placeholder]').forEach(el => {
+        el.placeholder = el.getAttribute('data-' + lang + '-placeholder') || el.placeholder;
+      });
+
+      // Select options
+      document.querySelectorAll('option[data-en]').forEach(opt => {
+        const text = opt.getAttribute('data-' + lang);
+        if (text) opt.textContent = text;
+      });
+    }
+  </script>
+
+</body>
+</html>
