@@ -264,7 +264,8 @@
       </div>
       <div id="form-success" style="display:none; padding: 2rem; background:#fff; border-left: 3px solid var(--green); margin-top: 1rem;">
         <p style="font-family: var(--serif); font-size: 1.3rem; font-weight:300; margin-bottom:0.5rem;" data-en="Thank you for reaching out!" data-ja="お問い合わせありがとうございます！">Thank you for reaching out!</p>
-        <p style="font-size:0.9rem; color: var(--mid);" data-en="Wakako will be in touch with you soon." data-ja="近日中にご連絡いたします。">Wakako will be in touch with you soon.</p>
+        <p style="font-size:0.9rem; color: var(--mid); margin-bottom:1.5rem;" data-en="Wakako will be in touch with you soon." data-ja="近日中にご連絡いたします。">Wakako will be in touch with you soon.</p>
+        <button onclick="document.getElementById('contactForm').reset(); document.getElementById('contactForm').style.display='flex'; document.getElementById('form-success').style.display='none';" class="btn" style="font-size:0.8rem; padding:0.7rem 1.6rem;" data-en="Send Another Message" data-ja="もう一件送る">Send Another Message</button>
       </div>
       <form class="contact-form" id="contactForm" action="https://formspree.io/f/mlgyrzwj" method="POST">
         <input type="hidden" name="_subject" value="【Wakako's Kitchen HP】お問い合わせが届きました">
